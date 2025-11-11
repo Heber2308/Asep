@@ -1,0 +1,176 @@
+<!DOCTYPE html><!DOCTYPE html>
+
+<html lang="id"><html lang="id">
+
+<head><head>
+
+  <meta charset="UTF-8" />  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title><%= title %></title>  <title><%= title %></title>
+
+  <style>  <style>
+
+    * {    * {
+
+      margin: 0;      margin: 0;
+
+      padding: 0;      padding: 0;
+
+      box-sizing: border-box;      box-sizing: border-box;
+
+    }    }
+
+
+
+    body {    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+      min-height: 100vh;      min-height: 100vh;
+
+      display: flex;      display: flex;
+
+      align-items: center;      align-items: center;
+
+      justify-content: center;      justify-content: center;
+
+      padding: 20px;      padding: 20px;
+
+    }    }
+
+
+
+    .container {    .container {
+
+      background: white;      background: white;
+
+      border-radius: 12px;      border-radius: 12px;
+
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+      padding: 60px 40px;      padding: 60px 40px;
+
+      max-width: 600px;      max-width: 600px;
+
+      width: 100%;      width: 100%;
+
+      text-align: center;      text-align: center;
+
+    }    }
+
+
+
+    .container h1 {    .container h1 {
+
+      font-size: 4em;      font-size: 4em;
+
+      color: #667eea;      color: #667eea;
+
+      margin-bottom: 20px;      margin-bottom: 20px;
+
+    }    }
+
+
+
+    .container p {    .container p {
+
+      font-size: 1.1em;      font-size: 1.1em;
+
+      color: #666;      color: #666;
+
+      margin-bottom: 30px;      margin-bottom: 30px;
+
+      line-height: 1.6;      line-height: 1.6;
+
+    }    }
+
+
+
+    .link-button {    .link-button {
+
+      display: inline-block;      display: inline-block;
+
+      padding: 12px 30px;      padding: 12px 30px;
+
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+      color: white;      color: white;
+
+      text-decoration: none;      text-decoration: none;
+
+      border-radius: 6px;      border-radius: 6px;
+
+      font-weight: 600;      font-weight: 600;
+
+      transition: transform 0.2s, box-shadow 0.2s;      transition: transform 0.2s, box-shadow 0.2s;
+
+      margin: 10px;      margin: 10px;
+
+    }    }
+
+
+
+    .link-button:hover {    .link-button:hover {
+
+      transform: translateY(-2px);      transform: translateY(-2px);
+
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+
+    }    }
+
+
+
+    @media (max-width: 600px) {    @media (max-width: 600px) {
+
+      .container {      .container {
+
+        padding: 40px 20px;        padding: 40px 20px;
+
+      }      }
+
+
+
+      .container h1 {      .container h1 {
+
+        font-size: 2.5em;        font-size: 2.5em;
+
+      }      }
+
+    }    }
+
+  </style>  </style>
+
+</head></head>
+
+<body><body>
+
+  <div class="container">  <div class="container">
+
+    <h1>404</h1>    <h1>404</h1>
+
+    <p>Halaman yang Anda cari tidak ditemukan atau tidak tersedia.</p>    <p>Halaman yang Anda cari tidak ditemukan atau tidak tersedia.</p>
+
+    <% if (user) { %>    <% if (user) { %>
+
+      <a href="/dashboard" class="link-button">Kembali ke Dashboard</a>      <a href="/dashboard" class="link-button">Kembali ke Dashboard</a>
+
+      <a href="/products" class="link-button">Lihat Produk</a>      <a href="/products" class="link-button">Lihat Produk</a>
+
+    <% } else { %>    <% } else { %>
+
+      <a href="/login" class="link-button">Login</a>      <a href="/login" class="link-button">Login</a>
+
+      <a href="/register" class="link-button">Daftar</a>      <a href="/register" class="link-button">Daftar</a>
+
+    <% } %>    <% } %>
+
+  </div>  </div>
+
+</body></body>
+
+</html></html>
+
