@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 // Data user (dalam praktik nyata, gunakan database)
 const users = [
